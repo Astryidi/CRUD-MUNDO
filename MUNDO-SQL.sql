@@ -18,3 +18,10 @@ id_pais int not null,
 foreign key (id_pais) references tb_pais (cd_pais)
 );
 
+create table tb_usuario (
+username varchar(20) primary key not null,
+senha varchar(128) not null,
+nome varchar(100) not null,
+tipo char(1) not null,
+status char(1)
+);
